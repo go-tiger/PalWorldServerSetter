@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>PalWorldSettings.ini 메이커</title>
+</head>
+    <body>
+        <table>
+            <thead>
+            <tr>
+                <th>옵션</th>
+                <th>설명</th>
+                <th>기본값</th>
+                <th>범위</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Difficulty</td>
+                <td>난이도</td>
+                <td>None</td>
+                <td>Casual, Normal, Hard</td>
+            </tr>
+            <tr>
+                <td>DayTimeSpeedRate</td>
+                <td>낮 시간 속도</td>
+                <td>1</td>
+                <td>0.1 ~ 5</td>
+            </tr>
+            <tr>
+                <td>NightTimeSpeedRate</td>
+                <td>밤 시간 속도</td>
+                <td>1</td>
+                <td>0.1 ~ 5</td>
+            </tr>
+            <tr>
+                <td>ExpRate</td>
+                <td>경험치 배율</td>
+                <td>1</td>
+                <td>0.1 ~ 20</td>
+            </tr>
+            <tr>
+                <td>PalCaptureRate</td>
+                <td>포획 배율</td>
+                <td>1</td>
+                <td>0.5 ~ 2</td>
+            </tr>
+            <tr>
+                <td>PalSpawnNumRate</td>
+                <td>팰 출현 배율</td>
+                <td>1</td>
+                <td>0.5 ~ 3</td>
+            </tr>
+            <tr>
+                <td>PalDamageRateAttack</td>
+                <td>팰 공격력 배율</td>
+                <td>1</td>
+                <td>0.1 ~ 5</td>
+            </tr>
+            <tr>
+                <td>PalDamageRateDefense</td>
+                <td>팰 방어력 배율</td>
+                <td>1</td>
+                <td>0.1 ~ 5</td>
+            </tr>
+            <tr>
+                <td>PlayerDamageRateAttack</td>
+                <td>플레이어 공격력 배율</td>
+                <td>1</td>
+                <td>0.1 ~ 5</td>
+            </tr>
+            <tr>
+                <td>PlayerDamageRateDefense</td>
+                <td>플레이어 방어력 배율</td>
+                <td>1</td>
+                <td>0.1 ~ 5</td>
+            </tr>
+            <tr>
+                <td>PlayerStomachDecreaseRate</td>
+                <td>플레이어 포만감 감소 배율</td>
+                <td>1</td>
+                <td>0.1 ~ 5</td>
+            </tr>
+            <tr>
+                <td>PlayerStaminaDecreaseRate</td>
+                <td>플레이어 기력 감소 배율</td>
+                <td>1</td>
+                <td>0.1 ~ 5</td>
+            </tr>
+            <tr>
+                <td>PlayerAutoHPRegeneRate</td>
+                <td>플레이어 자연 회복 배율</td>
+                <td>1</td>
+                <td>0.1 ~ 5</td>
+            </tr>
+            <tr>
+                <td>PlayerAutoHpRegeneRateInSleep</td>
+                <td>플레이어 수면 시 회복 배율</td>
+                <td>1</td>
+                <td>0.1 ~ 5</td>
+            </tr>
+            <tr>
+                <td>PalStomachDecreaseRate</td>
+                <td>팰 포만감 감소 배율</td>
+                <td>1</td>
+                <td>0.1 ~ 5</td>
+            </tr>
+            <tr>
+                <td>PalStaminaDecreaseRate</td>
+                <td>팰 기력 감소 배율</td>
+                <td>1</td>
+                <td>0.1 ~ 5</td>
+            </tr>
+            <tr>
+                <td>PalAutoHPRegeneRate</td>
+                <td>팰 자연 회복 배율</td>
+                <td>1</td>
+                <td>0.1 ~ 5</td>
+            </tr>
+            <tr>
+                <td>PalAutoHpRegeneRateInSleep</td>
+                <td>팰 수면 시 회복 배율</td>
+                <td>1</td>
+                <td>0.1 ~ 5</td>
+            </tr>
+            <tr>
+                <td>BuildObjectDamageRate</td>
+                <td>건물 피해 배율</td>
+                <td>1</td>
+                <td>0.1 ~ 3</td>
+            </tr>
+            <tr>
+                <td>BuildObjectDeteriorationDamageRate</td>
+                <td>건물 노화 속도 배율</td>
+                <td>1</td>
+                <td>0 ~ 10</td>
+            </tr>
+            <tr>
+                <td>CollectionDropRate</td>
+                <td>수집 아이템 획득량 배율</td>
+                <td>1</td>
+                <td>0.5 ~ 3</td>
+            </tr>
+            <tr>
+                <td>CollectionObjectHpRate</td>
+                <td>수집 오브젝트 HP 배율</td>
+                <td>1</td>
+                <td>0.5 ~ 3</td>
+            </tr>
+            <tr>
+                <td>CollectionObjectRespawnSpeedRate</td>
+                <td>수집 오브젝트 생성 속도</td>
+                <td>1</td>
+                <td>0.5 ~ 3</td>
+            </tr>
+            <tr>
+                <td>EnemyDropItemRate</td>
+                <td>드롭 아이템 배율</td>
+                <td>1</td>
+                <td>0.5 ~ 3</td>
+            </tr>
+            <tr>
+                <td>DeathPenalty</td>
+                <td>사망 패널티</td>
+                <td>All</td>
+                <td>None, Item, ItemAndEquipment, All</td>
+            </tr>
+            <tr>
+                <td>bEnablePlayerToPlayerDamage</td>
+                <td>플레이어간 데미지 여부</td>
+                <td>False</td>
+                <td>True / False</td>
+            </tr>
+            <tr>
+                <td>bEnableFriendlyFire</td>
+                <td>아군 피해 여부</td>
+                <td>False</td>
+                <td>True / False</td>
+            </tr>
+            <tr>
+                <td>bEnableInvaderEnemy</td>
+                <td>습격 이벤트 발생 여부</td>
+                <td>True</td>
+                <td>True / False</td>
+            </tr>
+            <tr>
+                <td>bActiveUNKO</td>
+                <td>똥 활성화 여부</td>
+                <td>False</td>
+                <td>True / False</td>
+            </tr>
+            <tr>
+                <td>bEnableAimAssistPad</td>
+                <td>컨트롤러 조준 보조 활성화 여부</td>
+                <td>True</td>
+                <td>True / False</td>
+            </tr>
+            <tr>
+                <td>bEnableAimAssistKeyboard</td>
+                <td>키보드 조준 보조 활성화 여부</td>
+                <td>False</td>
+                <td>True / False</td>
+            </tr>
+            <tr>
+                <td>DropItemMaxNum</td>
+                <td>게임 내 떨어진 아이템 최대 수</td>
+                <td>3000</td>
+                <td>0 ~ 5000</td>
+            </tr>
+            <tr>
+                <td>DropItemMaxNum_UNKO</td>
+                <td>게임 내 똥 아이템 최대 수</td>
+                <td>100</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>BaseCampMaxNum</td>
+                <td>건설 가능한 캠프 최대 수</td>
+                <td>128</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>BaseCampWorkerMaxNum</td>
+                <td>캠프에 작업 팰 최대 수</td>
+                <td>15</td>
+                <td>1 ~ 20</td>
+            </tr>
+            <tr>
+                <td>DropItemAliveMaxHours</td>
+                <td>떨어진 아이템 지속 시간</td>
+                <td>1</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bAutoResetGuildNoOnlinePlayers</td>
+                <td>온라인 플레이어가 없는 길드를 자동으로 재설정 여부</td>
+                <td>False</td>
+                <td>True / False</td>
+            </tr>
+            <tr>
+                <td>AutoResetGuildTimeNoOnlinePlayers</td>
+                <td>온라인 플레이어가 없는 길드가 자동으로 재설정되는 시간</td>
+                <td>72</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>GuildPlayerMaxNum</td>
+                <td>길드 내의 최대 플레이어 수</td>
+                <td>20</td>
+                <td>1 ~ 100</td>
+            </tr>
+            <tr>
+                <td>PalEggDefaultHatchingTime</td>
+                <td>팰 알 기본 부화 시간</td>
+                <td>72</td>
+                <td>0 ~ 240</td>
+            </tr>
+            <tr>
+                <td>WorkSpeedRate</td>
+                <td>게임 내 작업 속도</td>
+                <td>1</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bIsMultiplay</td>
+                <td>멀티플레이 모드 활성화 여부</td>
+                <td>False</td>
+                <td>True / False</td>
+            </tr>
+            <tr>
+                <td>bIsPvP</td>
+                <td>PVP 모드 활성화 여부</td>
+                <td>False</td>
+                <td>True / False</td>
+            </tr>
+            <tr>
+                <td>bCanPickupOtherGuildDeathPenaltyDrop</td>
+                <td>다른 길드의 사망 패널티 아이템 줍기 활성화 여부</td>
+                <td>False</td>
+                <td>True / False</td>
+            </tr>
+            <tr>
+                <td>bEnableNonLoginPenalty</td>
+                <td>미접속 패널티 활성화 여부</td>
+                <td>True</td>
+                <td>True / False</td>
+            </tr>
+            <tr>
+                <td>bEnableFastTravel</td>
+                <td>빠른여행 활성화 여부</td>
+                <td>True</td>
+                <td>True / False</td>
+            </tr>
+            <tr>
+                <td>bIsStartLocationSelectByMap</td>
+                <td>시작위치 선택 활성화 여부</td>
+                <td>True</td>
+                <td>True / False</td>
+            </tr>
+            <tr>
+                <td>bExistPlayerAfterLogout</td>
+                <td>로그아웃 후 플레이어의 존재 여부</td>
+                <td>False</td>
+                <td>True / False</td>
+            </tr>
+            <tr>
+                <td>bEnableDefenseOtherGuildPlayer</td>
+                <td>다른 길드 플레이어 방어 활성화 여부</td>
+                <td>False</td>
+                <td>True / False</td>
+            </tr>
+            <tr>
+                <td>CoopPlayerMaxNum</td>
+                <td>최대 협동 던전 플레이어 수</td>
+                <td>4</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>ServerPlayerMaxNum</td>
+                <td>서버 최대 플레이어 수</td>
+                <td>32</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>ServerName</td>
+                <td>서버 이름</td>
+                <td>Default Palworld Server</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>ServerDescription</td>
+                <td>서버 설명</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>AdminPassword</td>
+                <td>어드민 비밀번호</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>ServerPassword</td>
+                <td>서버 비밀번호</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>PublicPort</td>
+                <td>서버 포트</td>
+                <td>8211</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>PublicIP</td>
+                <td>서버 주소</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>RCONEnabled</td>
+                <td>원격 콘솔(RCON) 활성화 여부</td>
+                <td>False</td>
+                <td>True / False</td>
+            </tr>
+            <tr>
+                <td>RCONPort</td>
+                <td>원격 콘솔(RCON) 포트</td>
+                <td>25575</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Region</td>
+                <td>서버 지역</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bUseAuth</td>
+                <td>서버 인증 활성화 여부</td>
+                <td>True</td>
+                <td>True / False</td>
+            </tr>
+            <tr>
+                <td>BanListURL</td>
+                <td>차단 목록 URL</td>
+                <td>https://api.palworldgame.com/api/banlist.txt</td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
