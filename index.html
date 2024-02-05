@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css" />
     <script defer src="js/defaultSettings.js"></script>
     <script defer src="js/reset.js"></script>
+    <script defer src="js/changeValue.js"></script>
 </head>
     <body>
 
@@ -40,8 +41,12 @@
                 <td>DayTimeSpeedRate</td>
                 <td>낮 시간 속도</td>
                 <td>
-                    <input type="number" name="DayTimeSpeedRate" value="1" min="0.1" max="5" step="0.1">
-                    <input type="range" name="DayTimeSpeedRateRange" value="1" min="0.1" max="5" step="0.1">
+                    <input type="number" name="DayTimeSpeedRate" value="1" min="0.1" max="5" step="0.1"
+                        oninput="changeValue('DayTimeSpeedRate')"
+                    >
+                    <input type="range" name="DayTimeSpeedRateRange" value="1" min="0.1" max="5" step="0.1"
+                        oninput="changeValue('DayTimeSpeedRateRange')"
+                    >
                     ( 0.1 ~ 5 )
                 </td>
                 <td>기본값: 1 <button onclick="resetDefault('DayTimeSpeedRate')">초기화</button></td>
@@ -50,8 +55,12 @@
                 <td>NightTimeSpeedRate</td>
                 <td>밤 시간 속도</td>
                 <td>
-                    <input type="number" name="NightTimeSpeedRate" value="1" min="0.1" max="5" step="0.1">
-                    <input type="range" name="NightTimeSpeedRateRange" value="1" min="0.1" max="5" step="0.1">
+                    <input type="number" name="NightTimeSpeedRate" value="1" min="0.1" max="5" step="0.1"
+                        oninput="changeValue('NightTimeSpeedRate')"
+                    >
+                    <input type="range" name="NightTimeSpeedRateRange" value="1" min="0.1" max="5" step="0.1"
+                        oninput="changeValue('NightTimeSpeedRateRange')"
+                    >
                     ( 0.1 ~ 5 )
                 </td>
                 <td>기본값: 1 <button onclick="resetDefault('NightTimeSpeedRate')">초기화</button></td>
@@ -60,8 +69,12 @@
                 <td>ExpRate</td>
                 <td>경험치 배율</td>
                 <td>
-                    <input type="number" name="ExpRate" value="1" min="0.1" max="20" step="0.1">
-                    <input type="range" name="ExpRateRange" value="1" min="0.1" max="20" step="0.1">
+                    <input type="number" name="ExpRate" value="1" min="0.1" max="20" step="0.1"
+                        oninput="changeValue('ExpRate')"
+                    >
+                    <input type="range" name="ExpRateRange" value="1" min="0.1" max="20" step="0.1"
+                        oninput="changeValue('ExpRateRange')"
+                    >
                     ( 0.1 ~ 20 )
                 </td>
                 <td>기본값: 1 <button onclick="resetDefault('ExpRate')">초기화</button></td>
@@ -70,8 +83,12 @@
                 <td>PalCaptureRate</td>
                 <td>포획 배율</td>
                 <td>
-                    <input type="number" name="PalCaptureRate" value="1" min="0.5" max="2" step="0.1">
-                    <input type="range" name="PalCaptureRateRange" value="1" min="0.5" max="2" step="0.1">
+                    <input type="number" name="PalCaptureRate" value="1" min="0.5" max="2" step="0.1"
+                        oninput="changeValue('PalCaptureRate')"
+                    >
+                    <input type="range" name="PalCaptureRateRange" value="1" min="0.5" max="2" step="0.1"
+                        oninput="changeValue('PalCaptureRateRange')"
+                    >
                     ( 0.1 ~ 2 )
                 </td>
                 <td>기본값: 1 <button onclick="resetDefault('PalCaptureRate')">초기화</button></td>
@@ -80,8 +97,12 @@
                 <td>PalSpawnNumRate</td>
                 <td>팰 출현 배율</td>
                 <td>
-                    <input type="number" name="PalSpawnNumRate" value="1" min="0.5" max="3" step="0.1">
-                    <input type="range" name="PalSpawnNumRateRange" value="1" min="0.5" max="3" step="0.1">
+                    <input type="number" name="PalSpawnNumRate" value="1" min="0.5" max="3" step="0.1"
+                        oninput="changeValue('PalSpawnNumRate')"
+                    >
+                    <input type="range" name="PalSpawnNumRateRange" value="1" min="0.5" max="3" step="0.1"
+                        oninput="changeValue('PalSpawnNumRateRange')"
+                    >
                     ( 0.5 ~ 3 )
                 </td>
                 <td>기본값: 1 <button onclick="resetDefault('PalSpawnNumRate')">초기화</button></td>
@@ -90,8 +111,12 @@
                 <td>PalDamageRateAttack</td>
                 <td>팰 공격력 배율</td>
                 <td>
-                    <input type="number" name="PalDamageRateAttack" value="1" min="0.1" max="5" step="0.1">
-                    <input type="range" name="PalDamageRateAttackRange" value="1" min="0.1" max="5" step="0.1">
+                    <input type="number" name="PalDamageRateAttack" value="1" min="0.1" max="5" step="0.1"
+                        oninput="changeValue('PalDamageRateAttack')"
+                    >
+                    <input type="range" name="PalDamageRateAttackRange" value="1" min="0.1" max="5" step="0.1"
+                        oninput="changeValue('PalDamageRateAttackRange')"
+                    >
                     ( 0.1 ~ 5 )
                 </td>
                 <td>기본값: 1 <button onclick="resetDefault('PalDamageRateAttack')">초기화</button></td>
@@ -100,8 +125,12 @@
                 <td>PalDamageRateDefense</td>
                 <td>팰 방어력 배율</td>
                 <td>
-                    <input type="number" name="PalDamageRateDefense" value="1" min="0.1" max="5" step="0.1">
-                    <input type="range" name="PalDamageRateDefenseRange" value="1" min="0.1" max="5" step="0.1">
+                    <input type="number" name="PalDamageRateDefense" value="1" min="0.1" max="5" step="0.1"
+                        oninput="changeValue('PalDamageRateDefense')"
+                    >
+                    <input type="range" name="PalDamageRateDefenseRange" value="1" min="0.1" max="5" step="0.1"
+                        oninput="changeValue('PalDamageRateDefenseRange')"
+                    >
                     ( 0.1 ~ 5 )
                 </td>
                 <td>기본값: 1 <button onclick="resetDefault('PalDamageRateDefense')">초기화</button></td>
@@ -110,8 +139,12 @@
                 <td>PlayerDamageRateAttack</td>
                 <td>플레이어 공격력 배율</td>
                 <td>
-                    <input type="number" name="PlayerDamageRateAttack" value="1" min="0.1" max="5" step="0.1">
-                    <input type="range" name="PlayerDamageRateAttackRange" value="1" min="0.1" max="5" step="0.1">
+                    <input type="number" name="PlayerDamageRateAttack" value="1" min="0.1" max="5" step="0.1"
+                        oninput="changeValue('PlayerDamageRateAttack')"
+                    >
+                    <input type="range" name="PlayerDamageRateAttackRange" value="1" min="0.1" max="5" step="0.1"
+                        oninput="changeValue('PlayerDamageRateAttackRange')"
+                    >
                     ( 0.1 ~ 5 )
                 </td>
                 <td>기본값: 1 <button onclick="resetDefault('PlayerDamageRateAttack')">초기화</button></td>
@@ -120,8 +153,12 @@
                 <td>PlayerDamageRateDefense</td>
                 <td>플레이어 방어력 배율</td>
                 <td>
-                    <input type="number" name="PlayerDamageRateDefense" value="1" min="0.1" max="5" step="0.1">
-                    <input type="range" name="PlayerDamageRateDefenseRange" value="1" min="0.1" max="5" step="0.1">
+                    <input type="number" name="PlayerDamageRateDefense" value="1" min="0.1" max="5" step="0.1"
+                        oninput="changeValue('PlayerDamageRateDefense')"
+                    >
+                    <input type="range" name="PlayerDamageRateDefenseRange" value="1" min="0.1" max="5" step="0.1"
+                        oninput="changeValue('PlayerDamageRateDefenseRange')"
+                    >
                     ( 0.1 ~ 5 )
                 </td>
                 <td>기본값: 1 <button onclick="resetDefault('PlayerDamageRateDefense')">초기화</button></td>
@@ -130,8 +167,12 @@
                 <td>PlayerStomachDecreaseRate</td>
                 <td>플레이어 포만감 감소 배율</td>
                 <td>
-                    <input type="number" name="PlayerStomachDecreaseRate" value="1" min="0.1" max="5" step="0.1">
-                    <input type="range" name="PlayerStomachDecreaseRateRange" value="1" min="0.1" max="5" step="0.1">
+                    <input type="number" name="PlayerStomachDecreaseRate" value="1" min="0.1" max="5" step="0.1"
+                        oninput="changeValue('PlayerStomachDecreaseRate')"
+                    >
+                    <input type="range" name="PlayerStomachDecreaseRateRange" value="1" min="0.1" max="5" step="0.1"
+                        oninput="changeValue('PlayerStomachDecreaseRateRange')"
+                    >
                     ( 0.1 ~ 5 )
                 </td>
                 <td>기본값: 1 <button onclick="resetDefault('PlayerStomachDecreaseRate')">초기화</button></td>
@@ -140,8 +181,12 @@
                 <td>PlayerStaminaDecreaseRate</td>
                 <td>플레이어 기력 감소 배율</td>
                 <td>
-                    <input type="number" name="PlayerStaminaDecreaseRate" value="1" min="0.1" max="5" step="0.1">
-                    <input type="range" name="PlayerStaminaDecreaseRateRange" value="1" min="0.1" max="5" step="0.1">
+                    <input type="number" name="PlayerStaminaDecreaseRate" value="1" min="0.1" max="5" step="0.1"
+                        oninput="changeValue('PlayerStaminaDecreaseRate')"
+                    >
+                    <input type="range" name="PlayerStaminaDecreaseRateRange" value="1" min="0.1" max="5" step="0.1"
+                        oninput="changeValue('PlayerStaminaDecreaseRateRange')"
+                    >
                     ( 0.1 ~ 5 )
                 </td>
                 <td>기본값: 1 <button onclick="resetDefault('PlayerStaminaDecreaseRate')">초기화</button></td>
@@ -150,8 +195,12 @@
                 <td>PlayerAutoHPRegeneRate</td>
                 <td>플레이어 자연 회복 배율</td>
                 <td>
-                    <input type="number" name="PlayerAutoHPRegeneRate" value="1" min="0.1" max="5" step="0.1">
-                    <input type="range" name="PlayerAutoHPRegeneRateRange" value="1" min="0.1" max="5" step="0.1">
+                    <input type="number" name="PlayerAutoHPRegeneRate" value="1" min="0.1" max="5" step="0.1"
+                        oninput="changeValue('PlayerAutoHPRegeneRate')"
+                    >
+                    <input type="range" name="PlayerAutoHPRegeneRateRange" value="1" min="0.1" max="5" step="0.1"
+                        oninput="changeValue('PlayerAutoHPRegeneRateRange')"
+                    >
                     ( 0.1 ~ 5 )
                 </td>
                 <td>기본값: 1 <button onclick="resetDefault('PlayerAutoHPRegeneRate')">초기화</button></td>
@@ -160,8 +209,12 @@
                 <td>PlayerAutoHpRegeneRateInSleep</td>
                 <td>플레이어 수면 시 회복 배율</td>
                 <td>
-                    <input type="number" name="PlayerAutoHpRegeneRateInSleep" value="1" min="0.1" max="5" step="0.1">
-                    <input type="range" name="PlayerAutoHpRegeneRateInSleepRange" value="1" min="0.1" max="5" step="0.1">
+                    <input type="number" name="PlayerAutoHpRegeneRateInSleep" value="1" min="0.1" max="5" step="0.1"
+                        oninput="changeValue('PlayerAutoHpRegeneRateInSleep')"
+                    >
+                    <input type="range" name="PlayerAutoHpRegeneRateInSleepRange" value="1" min="0.1" max="5" step="0.1"
+                        oninput="changeValue('PlayerAutoHpRegeneRateInSleepRange')"
+                    >
                     ( 0.1 ~ 5 )
                 </td>
                 <td>기본값: 1 <button onclick="resetDefault('PlayerAutoHpRegeneRateInSleep')">초기화</button></td>
@@ -170,8 +223,12 @@
                 <td>PalStomachDecreaseRate</td>
                 <td>팰 포만감 감소 배율</td>
                 <td>
-                    <input type="number" name="PalStomachDecreaseRate" value="1" min="0.1" max="5" step="0.1">
-                    <input type="range" name="PalStomachDecreaseRateRange" value="1" min="0.1" max="5" step="0.1">
+                    <input type="number" name="PalStomachDecreaseRate" value="1" min="0.1" max="5" step="0.1"
+                        oninput="changeValue('PalStomachDecreaseRate')"
+                    >
+                    <input type="range" name="PalStomachDecreaseRateRange" value="1" min="0.1" max="5" step="0.1"
+                        oninput="changeValue('PalStomachDecreaseRateRange')"
+                    >
                     ( 0.1 ~ 5 )
                 </td>
                 <td>기본값: 1 <button onclick="resetDefault('PalStomachDecreaseRate')">초기화</button></td>
@@ -180,8 +237,12 @@
                 <td>PalStaminaDecreaseRate</td>
                 <td>팰 기력 감소 배율</td>
                 <td>
-                    <input type="number" name="PalStaminaDecreaseRate" value="1" min="0.1" max="5" step="0.1">
-                    <input type="range" name="PalStaminaDecreaseRateRange" value="1" min="0.1" max="5" step="0.1">
+                    <input type="number" name="PalStaminaDecreaseRate" value="1" min="0.1" max="5" step="0.1"
+                        oninput="changeValue('PalStaminaDecreaseRate')"
+                    >
+                    <input type="range" name="PalStaminaDecreaseRateRange" value="1" min="0.1" max="5" step="0.1"
+                        oninput="changeValue('PalStaminaDecreaseRateRange')"
+                    >
                     ( 0.1 ~ 5 )
                 </td>
                 <td>기본값: 1 <button onclick="resetDefault('PalStaminaDecreaseRate')">초기화</button></td>
@@ -190,8 +251,12 @@
                 <td>PalAutoHPRegeneRate</td>
                 <td>팰 자연 회복 배율</td>
                 <td>
-                    <input type="number" name="PalAutoHPRegeneRate" value="1" min="0.1" max="5" step="0.1">
-                    <input type="range" name="PalAutoHPRegeneRateRange" value="1" min="0.1" max="5" step="0.1">
+                    <input type="number" name="PalAutoHPRegeneRate" value="1" min="0.1" max="5" step="0.1"
+                        oninput="changeValue('PalAutoHPRegeneRate')"
+                    >
+                    <input type="range" name="PalAutoHPRegeneRateRange" value="1" min="0.1" max="5" step="0.1"
+                        oninput="changeValue('PalAutoHPRegeneRateRange')"
+                    >
                     ( 0.1 ~ 5 )
                 </td>
                 <td>기본값: 1 <button onclick="resetDefault('PalAutoHPRegeneRate')">초기화</button></td>
@@ -200,8 +265,12 @@
                 <td>PalAutoHpRegeneRateInSleep</td>
                 <td>팰 수면 시 회복 배율</td>
                 <td>
-                    <input type="number" name="PalAutoHpRegeneRateInSleep" value="1" min="0.1" max="5" step="0.1">
-                    <input type="range" name="PalAutoHpRegeneRateInSleepRange" value="1" min="0.1" max="5" step="0.1">
+                    <input type="number" name="PalAutoHpRegeneRateInSleep" value="1" min="0.1" max="5" step="0.1"
+                        oninput="changeValue('PalAutoHpRegeneRateInSleep')"
+                    >
+                    <input type="range" name="PalAutoHpRegeneRateInSleepRange" value="1" min="0.1" max="5" step="0.1"
+                        oninput="changeValue('PalAutoHpRegeneRateInSleepRange')"
+                    >
                     ( 0.1 ~ 5 )
                 </td>
                 <td>기본값: 1 <button onclick="resetDefault('PalAutoHpRegeneRateInSleep')">초기화</button></td>
@@ -210,8 +279,12 @@
                 <td>BuildObjectDamageRate</td>
                 <td>건물 피해 배율</td>
                 <td>
-                    <input type="number" name="BuildObjectDamageRate" value="1" min="0.1" max="3" step="0.1">
-                    <input type="range" name="BuildObjectDamageRateRange" value="1" min="0.1" max="3" step="0.1">
+                    <input type="number" name="BuildObjectDamageRate" value="1" min="0.1" max="3" step="0.1"
+                        oninput="changeValue('BuildObjectDamageRate')"
+                    >
+                    <input type="range" name="BuildObjectDamageRateRange" value="1" min="0.1" max="3" step="0.1"
+                        oninput="changeValue('BuildObjectDamageRateRange')"
+                    >
                     ( 0.1 ~ 3 )
                 </td>
                 <td>기본값: 1 <button onclick="resetDefault('BuildObjectDamageRate')">초기화</button></td>
@@ -220,8 +293,12 @@
                 <td>BuildObjectDeteriorationDamageRate</td>
                 <td>건물 노화 속도 배율</td>
                 <td>
-                    <input type="number" name="BuildObjectDeteriorationDamageRate" value="1" min="0" max="10" step="0.1">
-                    <input type="range" name="BuildObjectDeteriorationDamageRateRange" value="1" min="0" max="10" step="0.1">
+                    <input type="number" name="BuildObjectDeteriorationDamageRate" value="1" min="0" max="10" step="0.1"
+                        oninput="changeValue('BuildObjectDeteriorationDamageRate')"
+                    >
+                    <input type="range" name="BuildObjectDeteriorationDamageRateRange" value="1" min="0" max="10" step="0.1"
+                        oninput="changeValue('BuildObjectDeteriorationDamageRateRange')"
+                    >
                     ( 0 ~ 10 )
                 </td>
                 <td>기본값: 1 <button onclick="resetDefault('BuildObjectDeteriorationDamageRate')">초기화</button></td>
@@ -230,8 +307,12 @@
                 <td>CollectionDropRate</td>
                 <td>수집 아이템 획득량 배율</td>
                 <td>
-                    <input type="number" name="CollectionDropRate" value="1" min="0.5" max="3" step="0.1">
-                    <input type="range" name="CollectionDropRateRange" value="1" min="0.5" max="3" step="0.1">
+                    <input type="number" name="CollectionDropRate" value="1" min="0.5" max="3" step="0.1"
+                        oninput="changeValue('CollectionDropRate')"
+                    >
+                    <input type="range" name="CollectionDropRateRange" value="1" min="0.5" max="3" step="0.1"
+                        oninput="changeValue('CollectionDropRateRange')"
+                    >
                     ( 0.5 ~ 3 )
                 </td>
                 <td>기본값: 1 <button onclick="resetDefault('CollectionDropRate')">초기화</button></td>
@@ -240,8 +321,12 @@
                 <td>CollectionObjectHpRate</td>
                 <td>수집 오브젝트 HP 배율</td>
                 <td>
-                    <input type="number" name="CollectionObjectHpRate" value="1" min="0.5" max="3" step="0.1">
-                    <input type="range" name="CollectionObjectHpRateRange" value="1" min="0.5" max="3" step="0.1">
+                    <input type="number" name="CollectionObjectHpRate" value="1" min="0.5" max="3" step="0.1"
+                        oninput="changeValue('CollectionObjectHpRate')"
+                    >
+                    <input type="range" name="CollectionObjectHpRateRange" value="1" min="0.5" max="3" step="0.1"
+                        oninput="changeValue('CollectionObjectHpRateRange')"
+                    >
                     ( 0.5 ~ 3 )
                 </td>
                 <td>기본값: 1 <button onclick="resetDefault('CollectionObjectHpRate')">초기화</button></td>
@@ -250,8 +335,12 @@
                 <td>CollectionObjectRespawnSpeedRate</td>
                 <td>수집 오브젝트 생성 속도</td>
                 <td>
-                    <input type="number" name="CollectionObjectRespawnSpeedRate" value="1" min="0.5" max="3" step="0.1">
-                    <input type="range" name="CollectionObjectRespawnSpeedRateRange" value="1" min="0.5" max="3" step="0.1">
+                    <input type="number" name="CollectionObjectRespawnSpeedRate" value="1" min="0.5" max="3" step="0.1"
+                        oninput="changeValue('CollectionObjectRespawnSpeedRate')"
+                    >
+                    <input type="range" name="CollectionObjectRespawnSpeedRateRange" value="1" min="0.5" max="3" step="0.1"
+                        oninput="changeValue('CollectionObjectRespawnSpeedRateRange')"
+                    >
                     ( 0.5 ~ 3 )
                 </td>
                 <td>기본값: 1 <button onclick="resetDefault('CollectionObjectRespawnSpeedRate')">초기화</button></td>
@@ -260,8 +349,12 @@
                 <td>EnemyDropItemRate</td>
                 <td>드롭 아이템 배율</td>
                 <td>
-                    <input type="number" name="EnemyDropItemRate" value="1" min="0.5" max="3" step="0.1">
-                    <input type="range" name="EnemyDropItemRateRange" value="1" min="0.5" max="3" step="0.1">
+                    <input type="number" name="EnemyDropItemRate" value="1" min="0.5" max="3" step="0.1"
+                        oninput="changeValue('EnemyDropItemRate')"
+                    >
+                    <input type="range" name="EnemyDropItemRateRange" value="1" min="0.5" max="3" step="0.1"
+                        oninput="changeValue('EnemyDropItemRateRange')"
+                    >
                     ( 0.5 ~ 3 )
                 </td>
                 <td>기본값: 1 <button onclick="resetDefault('EnemyDropItemRate')">초기화</button></td>
@@ -270,9 +363,15 @@
                 <td>DeathPenalty</td>
                 <td>사망 패널티</td>
                 <td>
-                    <input type="radio" name="DeathPenalty" value="None">None-없음<br>
-                    <input type="radio" name="DeathPenalty" value="Item">Item-장비 이외의 아이템 드랍<br>
-                    <input type="radio" name="DeathPenalty" value="ItemAndEquipment">ItemAndEquipment-모든 아이템 드랍<br>
+                    <input type="radio" name="DeathPenalty" value="None"
+                        oninput="changeValue('DeathPenalty')"
+                    >None-없음<br>
+                    <input type="radio" name="DeathPenalty" value="Item"
+                        oninput="changeValue('DeathPenalty')"
+                    >Item-장비 이외의 아이템 드랍<br>
+                    <input type="radio" name="DeathPenalty" value="ItemAndEquipment"
+                        oninput="changeValue('DeathPenalty')"
+                    >ItemAndEquipment-모든 아이템 드랍<br>
                     <input type="radio" name="DeathPenalty" value="All" checked>All-모든 팰, 아이템 드랍
                 </td>
                 <td>기본값: All <button onclick="resetDefault('DeathPenalty')">초기화</button></td>
@@ -281,7 +380,9 @@
                 <td>bEnablePlayerToPlayerDamage</td>
                 <td>플레이어간 데미지 여부</td>
                 <td>
-                    <input type="radio" name="bEnablePlayerToPlayerDamage" value="True">활성화
+                    <input type="radio" name="bEnablePlayerToPlayerDamage" value="True"
+                        oninput="changeValue('bEnablePlayerToPlayerDamage')"
+                    >활성화
                     <input type="radio" name="bEnablePlayerToPlayerDamage" value="False" checked>비활성화
                 </td>
                 <td>기본값: False <button onclick="resetDefault('bEnablePlayerToPlayerDamage')">초기화</button></td>
@@ -290,7 +391,9 @@
                 <td>bEnableFriendlyFire</td>
                 <td>아군 피해 여부</td>
                 <td>
-                    <input type="radio" name="bEnableFriendlyFire" value="True">활성화
+                    <input type="radio" name="bEnableFriendlyFire" value="True"
+                        oninput="changeValue('bEnableFriendlyFire')"
+                    >활성화
                     <input type="radio" name="bEnableFriendlyFire" value="False" checked>비활성화
                 </td>
                 <td>기본값: False <button onclick="resetDefault('bEnableFriendlyFire')">초기화</button></td>
@@ -300,7 +403,9 @@
                 <td>습격 이벤트 발생 여부</td>
                 <td>
                     <input type="radio" name="bEnableInvaderEnemy" value="True" checked>활성화
-                    <input type="radio" name="bEnableInvaderEnemy" value="False">비활성화
+                    <input type="radio" name="bEnableInvaderEnemy" value="False"
+                        oninput="changeValue('bEnableInvaderEnemy')"
+                    >비활성화
                 </td>
                 <td>기본값: True <button onclick="resetDefault('bEnableInvaderEnemy')">초기화</button></td>
             </tr>
@@ -308,7 +413,9 @@
                 <td>bActiveUNKO</td>
                 <td>똥 활성화 여부</td>
                 <td>
-                    <input type="radio" name="bActiveUNKO" value="True">활성화
+                    <input type="radio" name="bActiveUNKO" value="True"
+                        oninput="changeValue('bActiveUNKO')"
+                    >활성화
                     <input type="radio" name="bActiveUNKO" value="False" checked>비활성화
                 </td>
                 <td>기본값: False <button onclick="resetDefault('bActiveUNKO')">초기화</button></td>
@@ -318,7 +425,9 @@
                 <td>컨트롤러 조준 보조 활성화 여부</td>
                 <td>
                     <input type="radio" name="bEnableAimAssistPad" value="True" checked>활성화
-                    <input type="radio" name="bEnableAimAssistPad" value="False">비활성화
+                    <input type="radio" name="bEnableAimAssistPad" value="False"
+                        oninput="changeValue('bEnableAimAssistPad')"
+                    >비활성화
                 </td>
                 <td>기본값: True <button onclick="resetDefault('bEnableAimAssistPad')">초기화</button></td>
             </tr>
@@ -326,7 +435,9 @@
                 <td>bEnableAimAssistKeyboard</td>
                 <td>키보드 조준 보조 활성화 여부</td>
                 <td>
-                    <input type="radio" name="bEnableAimAssistKeyboard" value="True">활성화
+                    <input type="radio" name="bEnableAimAssistKeyboard" value="True"
+                        oninput="changeValue('bEnableAimAssistKeyboard')"
+                    >활성화
                     <input type="radio" name="bEnableAimAssistKeyboard" value="False" checked>비활성화
                 </td>
                 <td>기본값: False <button onclick="resetDefault('bEnableAimAssistKeyboard')">초기화</button></td>
@@ -335,8 +446,12 @@
                 <td>DropItemMaxNum</td>
                 <td>게임 내 떨어진 아이템 최대 수</td>
                 <td>
-                    <input type="number" name="DropItemMaxNum" value="3000" min="0" max="5000" step="1">
-                    <input type="range" name="DropItemMaxNumRange" value="3000" min="0" max="5000" step="1">
+                    <input type="number" name="DropItemMaxNum" value="3000" min="0" max="5000" step="1"
+                        oninput="changeValue('DropItemMaxNum')"
+                    >
+                    <input type="range" name="DropItemMaxNumRange" value="3000" min="0" max="5000" step="1"
+                        oninput="changeValue('DropItemMaxNumRange')"
+                    >
                     ( 0 ~ 5000 )
                 </td>
                 <td>기본값: 3000 <button onclick="resetDefault('DropItemMaxNum')">초기화</button></td>
@@ -345,8 +460,12 @@
                 <td>DropItemMaxNum_UNKO</td>
                 <td>게임 내 똥 아이템 최대 수</td>
                 <td>
-                    <input type="number" name="DropItemMaxNum_UNKO" value="100" min="0" max="5000" step="1">
-                    <input type="range" name="DropItemMaxNum_UNKORange" value="100" min="0" max="5000" step="1">
+                    <input type="number" name="DropItemMaxNum_UNKO" value="100" min="0" max="5000" step="1"
+                        oninput="changeValue('DropItemMaxNum_UNKO')"
+                    >
+                    <input type="range" name="DropItemMaxNum_UNKORange" value="100" min="0" max="5000" step="1"
+                        oninput="changeValue('DropItemMaxNum_UNKORange')"
+                    >
                     ( 0 ~ 5000 )
                 </td>
                 <td>기본값: 100 <button onclick="resetDefault('DropItemMaxNum_UNKO')">초기화</button></td>
@@ -355,8 +474,12 @@
                 <td>BaseCampMaxNum</td>
                 <td>건설 가능한 거점 최대 수</td>
                 <td>
-                    <input type="number" name="BaseCampMaxNum" value="128" min="0" max="10240" step="1">
-                    <input type="range" name="BaseCampMaxNumRange" value="128" min="0" max="10240" step="1">
+                    <input type="number" name="BaseCampMaxNum" value="128" min="0" max="10240" step="1"
+                        oninput="changeValue('BaseCampMaxNum')"
+                    >
+                    <input type="range" name="BaseCampMaxNumRange" value="128" min="0" max="10240" step="1"
+                        oninput="changeValue('BaseCampMaxNumRange')"
+                    >
                     ( 0 ~ 10240 )
                 </td>
                 <td>기본값: 128 <button onclick="resetDefault('BaseCampMaxNum')">초기화</button></td>
@@ -365,8 +488,12 @@
                 <td>BaseCampWorkerMaxNum</td>
                 <td>거점 작업 팰 최대 수</td>
                 <td>
-                    <input type="number" name="BaseCampWorkerMaxNum" value="15" min="0" max="20" step="1">
-                    <input type="range" name="BaseCampWorkerMaxNumRange" value="15" min="0" max="20" step="1">
+                    <input type="number" name="BaseCampWorkerMaxNum" value="15" min="0" max="20" step="1"
+                        oninput="changeValue('BaseCampWorkerMaxNum')"
+                    >
+                    <input type="range" name="BaseCampWorkerMaxNumRange" value="15" min="0" max="20" step="1"
+                        oninput="changeValue('BaseCampWorkerMaxNumRange')"
+                    >
                     ( 1 ~ 20 )
                 </td>
                 <td>기본값: 15 <button onclick="resetDefault('BaseCampWorkerMaxNum')">초기화</button></td>
@@ -375,8 +502,12 @@
                 <td>DropItemAliveMaxHours</td>
                 <td>떨어진 아이템 지속 시간</td>
                 <td>
-                    <input type="number" name="DropItemAliveMaxHours" value="1" min="0" max="240" step="1">
-                    <input type="range" name="DropItemAliveMaxHoursRange" value="1" min="0" max="240" step="1">
+                    <input type="number" name="DropItemAliveMaxHours" value="1" min="0" max="240" step="1"
+                        oninput="changeValue('DropItemAliveMaxHours')"
+                    >
+                    <input type="range" name="DropItemAliveMaxHoursRange" value="1" min="0" max="240" step="1"
+                        oninput="changeValue('DropItemAliveMaxHoursRange')"
+                    >
                     ( 0 ~ 240 )
                 </td>
                 <td>기본값: 1 <button onclick="resetDefault('DropItemAliveMaxHours')">초기화</button></td>
@@ -385,7 +516,9 @@
                 <td>bAutoResetGuildNoOnlinePlayers</td>
                 <td>온라인 플레이어가 없는 길드를 자동으로 재설정 여부</td>
                 <td>
-                    <input type="radio" name="bAutoResetGuildNoOnlinePlayers" value="True">활성화
+                    <input type="radio" name="bAutoResetGuildNoOnlinePlayers" value="True"
+                        oninput="changeValue('bAutoResetGuildNoOnlinePlayers')"
+                    >활성화
                     <input type="radio" name="bAutoResetGuildNoOnlinePlayers" value="False" checked>비활성화
                 </td>
                 <td>기본값: False <button onclick="resetDefault('bAutoResetGuildNoOnlinePlayers')">초기화</button></td>
@@ -394,8 +527,12 @@
                 <td>AutoResetGuildTimeNoOnlinePlayers</td>
                 <td>온라인 플레이어가 없는 길드가 자동으로 재설정되는 시간</td>
                 <td>
-                    <input type="number" name="AutoResetGuildTimeNoOnlinePlayers" value="72" min="0" max="240" step="1">
-                    <input type="range" name="AutoResetGuildTimeNoOnlinePlayersRange" value="72" min="0" max="240" step="1">
+                    <input type="number" name="AutoResetGuildTimeNoOnlinePlayers" value="72" min="0" max="240" step="1"
+                        oninput="changeValue('AutoResetGuildTimeNoOnlinePlayers')"
+                    >
+                    <input type="range" name="AutoResetGuildTimeNoOnlinePlayersRange" value="72" min="0" max="240" step="1"
+                        oninput="changeValue('AutoResetGuildTimeNoOnlinePlayersRange')"
+                    >
                     ( 0 ~ 240 )
                 </td>
                 <td>기본값: 72 <button onclick="resetDefault('AutoResetGuildTimeNoOnlinePlayers')">초기화</button></td>
@@ -404,8 +541,12 @@
                 <td>GuildPlayerMaxNum</td>
                 <td>길드 내의 최대 플레이어 수</td>
                 <td>
-                    <input type="number" name="AutoResetGuildTimeNoOnlinePlayers" value="20" min="0" max="100" step="1">
-                    <input type="range" name="AutoResetGuildTimeNoOnlinePlayersRange" value="20" min="0" max="100" step="1">
+                    <input type="number" name="GuildPlayerMaxNum" value="20" min="0" max="100" step="1"
+                        oninput="changeValue('GuildPlayerMaxNum')"
+                    >
+                    <input type="range" name="GuildPlayerMaxNumRange" value="20" min="0" max="100" step="1"
+                        oninput="changeValue('GuildPlayerMaxNumRange')"
+                    >
                     ( 0 ~ 100 )
                 </td>
                 <td>기본값: 20 <button onclick="resetDefault('AutoResetGuildTimeNoOnlinePlayers')">초기화</button></td>
@@ -414,8 +555,12 @@
                 <td>PalEggDefaultHatchingTime</td>
                 <td>팰 알 기본 부화 시간</td>
                 <td>
-                    <input type="number" name="PalEggDefaultHatchingTime" value="72" min="0" max="240" step="1">
-                    <input type="range" name="PalEggDefaultHatchingTimeRange" value="72" min="0" max="240" step="1">
+                    <input type="number" name="PalEggDefaultHatchingTime" value="72" min="0" max="240" step="1" 
+                        oninput="changeValue('PalEggDefaultHatchingTime')"
+                    >
+                    <input type="range" name="PalEggDefaultHatchingTimeRange" value="72" min="0" max="240" step="1"
+                        oninput="changeValue('PalEggDefaultHatchingTimeRange')"
+                    >
                     ( 0 ~ 240 )
                 </td>
                 <td>기본값: 72 <button onclick="resetDefault('PalEggDefaultHatchingTime')">초기화</button></td>
@@ -424,8 +569,12 @@
                 <td>WorkSpeedRate</td>
                 <td>게임 내 작업 속도</td>
                 <td>
-                    <input type="number" name="WorkSpeedRate" value="1" min="0.1" max="5" step="0.1">
-                    <input type="range" name="WorkSpeedRateRange" value="1" min="0.1" max="5" step="0.1">
+                    <input type="number" name="WorkSpeedRate" value="1" min="0.1" max="5" step="0.1"
+                        oninput="changeValue('WorkSpeedRate')"
+                    >
+                    <input type="range" name="WorkSpeedRateRange" value="1" min="0.1" max="5" step="0.1"
+                        oninput="changeValue('WorkSpeedRateRange')"
+                    >
                     ( 0.1 ~ 5 )
                 </td>
                 <td>기본값: 1 <button onclick="resetDefault('WorkSpeedRate')">초기화</button></td>
@@ -434,7 +583,9 @@
                 <td>bIsMultiplay</td>
                 <td>멀티플레이 모드 활성화 여부</td>
                 <td>
-                    <input type="radio" name="bIsMultiplay" value="True">활성화
+                    <input type="radio" name="bIsMultiplay" value="True"
+                        oninput="changeValue('bIsMultiplay')"
+                    >활성화
                     <input type="radio" name="bIsMultiplay" value="False" checked>비활성화
                 </td>
                 <td>기본값: False <button onclick="resetDefault('bIsMultiplay')">초기화</button></td>
@@ -443,7 +594,9 @@
                 <td>bIsPvP</td>
                 <td>PVP 모드 활성화 여부</td>
                 <td>
-                    <input type="radio" name="bIsPvP" value="True">활성화
+                    <input type="radio" name="bIsPvP" value="True"
+                        oninput="changeValue('bIsPvP')"
+                    >활성화
                     <input type="radio" name="bIsPvP" value="False" checked>비활성화
                 </td>
                 <td>기본값: False <button onclick="resetDefault('bIsPvP')">초기화</button></td>
@@ -452,7 +605,9 @@
                 <td>bCanPickupOtherGuildDeathPenaltyDrop</td>
                 <td>다른 길드의 사망 패널티 아이템 줍기 활성화 여부</td>
                 <td>
-                    <input type="radio" name="bCanPickupOtherGuildDeathPenaltyDrop" value="True">활성화
+                    <input type="radio" name="bCanPickupOtherGuildDeathPenaltyDrop" value="True"
+                        oninput="changeValue('bCanPickupOtherGuildDeathPenaltyDrop')"
+                    >활성화
                     <input type="radio" name="bCanPickupOtherGuildDeathPenaltyDrop" value="False" checked>비활성화
                 </td>
                 <td>기본값: False <button onclick="resetDefault('bCanPickupOtherGuildDeathPenaltyDrop')">초기화</button></td>
@@ -462,7 +617,9 @@
                 <td>미접속 패널티 활성화 여부</td>
                 <td>
                     <input type="radio" name="bEnableNonLoginPenalty" value="True" checked>활성화
-                    <input type="radio" name="bEnableNonLoginPenalty" value="False">비활성화
+                    <input type="radio" name="bEnableNonLoginPenalty" value="False"
+                        oninput="changeValue('bEnableNonLoginPenalty')"
+                    >비활성화
                 </td>
                 <td>기본값: True <button onclick="resetDefault('bEnableNonLoginPenalty')">초기화</button></td>
             </tr>
@@ -471,7 +628,9 @@
                 <td>빠른여행 활성화 여부</td>
                 <td>
                     <input type="radio" name="bEnableFastTravel" value="True" checked>활성화
-                    <input type="radio" name="bEnableFastTravel" value="False">비활성화
+                    <input type="radio" name="bEnableFastTravel" value="False"
+                        oninput="changeValue('bEnableFastTravel')"
+                    >비활성화
                 </td>
                 <td>기본값: True <button onclick="resetDefault('bEnableFastTravel')">초기화</button></td>
             </tr>
@@ -480,7 +639,9 @@
                 <td>시작위치 선택 활성화 여부</td>
                 <td>
                     <input type="radio" name="bIsStartLocationSelectByMap" value="True" checked>활성화
-                    <input type="radio" name="bIsStartLocationSelectByMap" value="False">비활성화
+                    <input type="radio" name="bIsStartLocationSelectByMap" value="False"
+                        oninput="changeValue('bIsStartLocationSelectByMap')"
+                    >비활성화
                 </td>
                 <td>기본값: True <button onclick="resetDefault('bIsStartLocationSelectByMap')">초기화</button></td>
             </tr>
@@ -488,7 +649,9 @@
                 <td>bExistPlayerAfterLogout</td>
                 <td>로그아웃 후 플레이어의 존재 여부</td>
                 <td>
-                    <input type="radio" name="bExistPlayerAfterLogout" value="True">활성화
+                    <input type="radio" name="bExistPlayerAfterLogout" value="True"
+                        oninput="changeValue('bExistPlayerAfterLogout')"
+                    >활성화
                     <input type="radio" name="bExistPlayerAfterLogout" value="False" checked>비활성화
                 </td>
                 <td>기본값: False <button onclick="resetDefault('bExistPlayerAfterLogout')">초기화</button></td>
@@ -497,7 +660,9 @@
                 <td>bEnableDefenseOtherGuildPlayer</td>
                 <td>다른 길드 플레이어 방어 활성화 여부</td>
                 <td>
-                    <input type="radio" name="bEnableDefenseOtherGuildPlayer" value="True">활성화
+                    <input type="radio" name="bEnableDefenseOtherGuildPlayer" value="True"
+                        oninput="changeValue('bEnableDefenseOtherGuildPlayer')"
+                    >활성화
                     <input type="radio" name="bEnableDefenseOtherGuildPlayer" value="False" checked>비활성화
                 </td>
                 <td>기본값: False <button onclick="resetDefault('bEnableDefenseOtherGuildPlayer')">초기화</button></td>
@@ -506,7 +671,9 @@
                 <td>CoopPlayerMaxNum</td>
                 <td>최대 협동 던전 플레이어 수</td>
                 <td>
-                    <input type="text" name="CoopPlayerMaxNum" value="4">
+                    <input type="text" name="CoopPlayerMaxNum" value="4"
+                        oninput="changeValue('CoopPlayerMaxNum')"
+                    >
                 </td>
                 <td>기본값: 4 <button onclick="resetDefault('CoopPlayerMaxNum')">초기화</button></td>
             </tr>
@@ -514,8 +681,12 @@
                 <td>ServerPlayerMaxNum</td>
                 <td>서버 최대 플레이어 수</td>
                 <td>
-                    <input type="number" name="ServerPlayerMaxNum" value="32" min="0" max="512" step="1">
-                    <input type="range" name="ServerPlayerMaxNumRange" value="32" min="0" max="512" step="1">
+                    <input type="number" name="ServerPlayerMaxNum" value="32" min="0" max="512" step="1"
+                        oninput="changeValue('ServerPlayerMaxNum')"
+                    >
+                    <input type="range" name="ServerPlayerMaxNumRange" value="32" min="0" max="512" step="1"
+                        oninput="changeValue('ServerPlayerMaxNumRange')"
+                    >
                     ( 1 ~ 512 )
                 </td>
                 <td>기본값: 32 <button onclick="resetDefault('ServerPlayerMaxNum')">초기화</button></td>
@@ -524,7 +695,9 @@
                 <td>ServerName</td>
                 <td>서버 이름</td>
                 <td>
-                    <input type="text" name="ServerName" value="Default Palworld Server">
+                    <input type="text" name="ServerName" value="Default Palworld Server"
+                        oninput="changeValue('ServerName')"
+                    >
                 </td>
                 <td><button onclick="resetDefault('ServerName')">초기화</button></td>
             </tr>
@@ -532,7 +705,9 @@
                 <td>ServerDescription</td>
                 <td>서버 설명</td>
                 <td>
-                    <input type="text" name="ServerDescription" value="">
+                    <input type="text" name="ServerDescription" value=""
+                        oninput="changeValue('ServerDescription')"
+                    >
                 </td>
                 <td><button onclick="resetDefault('ServerDescription')">초기화</button></td>
             </tr>
@@ -540,7 +715,9 @@
                 <td>AdminPassword</td>
                 <td>어드민 비밀번호</td>
                 <td>
-                    <input type="text" name="AdminPassword" value="">
+                    <input type="text" name="AdminPassword" value=""
+                        oninput="changeValue('AdminPassword')"
+                    >
                 </td>
                 <td><button onclick="resetDefault('AdminPassword')">초기화</button></td>
             </tr>
@@ -548,7 +725,9 @@
                 <td>ServerPassword</td>
                 <td>서버 비밀번호</td>
                 <td>
-                    <input type="text" name="ServerPassword" value="">
+                    <input type="text" name="ServerPassword" value=""
+                        oninput="changeValue('ServerPassword')"
+                    >
                 </td>
                 <td><button onclick="resetDefault('ServerPassword')">초기화</button></td>
             </tr>
@@ -556,7 +735,9 @@
                 <td>PublicPort</td>
                 <td>서버 포트</td>
                 <td>
-                    <input type="text" name="PublicPort" value="8211">
+                    <input type="text" name="PublicPort" value="8211"
+                        oninput="changeValue('PublicPort')"
+                    >
                 </td>
                 <td>기본값: 8211 <button onclick="resetDefault('PublicPort')">초기화</button></td>
             </tr>
@@ -564,7 +745,9 @@
                 <td>PublicIP</td>
                 <td>서버 주소</td>
                 <td>
-                    <input type="text" name="PublicIP" value="">
+                    <input type="text" name="PublicIP" value=""
+                        oninput="changeValue('PublicIP')"
+                    >
                 </td>
                 <td><button onclick="resetDefault('PublicIP')">초기화</button></td>
             </tr>
@@ -572,7 +755,9 @@
                 <td>RCONEnabled</td>
                 <td>원격 콘솔(RCON) 활성화 여부</td>
                 <td>
-                    <input type="radio" name="RCONEnabled" value="True">활성화
+                    <input type="radio" name="RCONEnabled" value="True"
+                        oninput="changeValue('RCONEnabled')"
+                    >활성화
                     <input type="radio" name="RCONEnabled" value="False" checked>비활성화
                 </td>
                 <td>기본값: False <button onclick="resetDefault('RCONEnabled')">초기화</button></td>
@@ -581,7 +766,9 @@
                 <td>RCONPort</td>
                 <td>원격 콘솔(RCON) 포트</td>
                 <td>
-                    <input type="text" name="RCONPort" value="25575">
+                    <input type="text" name="RCONPort" value="25575"
+                        oninput="changeValue('RCONPort')"
+                    >
                 </td>
                 <td>기본값: 25575 <button onclick="resetDefault('RCONPort')">초기화</button></td>
             </tr>
@@ -589,7 +776,9 @@
                 <td>Region</td>
                 <td>서버 지역</td>
                 <td>
-                    <input type="text" name="Region" value="">
+                    <input type="text" name="Region" value=""
+                        oninput="changeValue('Region')"
+                    >
                 </td>
                 <td><button onclick="resetDefault('Region')">초기화</button></td>
             </tr>
@@ -598,7 +787,9 @@
                 <td>인증 사용 여부</td>
                 <td>
                     <input type="radio" name="bUseAuth" value="True" checked>활성화
-                    <input type="radio" name="bUseAuth" value="False">비활성화
+                    <input type="radio" name="bUseAuth" value="False"
+                        oninput="changeValue('bUseAuth')"
+                    >비활성화
                 </td>
                 <td>기본값: True <button onclick="resetDefault('bUseAuth')">초기화</button></td>
             </tr>
@@ -606,7 +797,9 @@
                 <td>BanListURL</td>
                 <td>차단 목록 URL</td>
                 <td>
-                    <input type="text" name="BanListURL" value="https://api.palworldgame.com/api/banlist.txt">
+                    <input type="text" name="BanListURL" value="https://api.palworldgame.com/api/banlist.txt"
+                        oninput="changeValue('BanListURL')"
+                    >
                 </td>
                 <td><button onclick="resetDefault('BanListURL')">초기화</button></td>
             </tr>
