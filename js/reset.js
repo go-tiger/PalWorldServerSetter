@@ -11,17 +11,18 @@ function resetDefault(option) {
         for (let i = 0; i < inputRadio.length; i++) {
             if (inputRadio[i].value === defaultSettings[option]) {
                 inputRadio[i].checked = true
+                inputRadio[i].parentNode.style.backgroundColor = '';
                 break
             }
         }
     } else {
         clickInput.value = defaultSettings[option]
     }
+    clickInput.style.backgroundColor = '';
 }
 
 function resetAllDefault() {
     for (const option in defaultSettings) {
-        console.log(defaultSettings)
         resetDefault(option)
     }
 }
