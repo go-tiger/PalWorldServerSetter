@@ -6,9 +6,7 @@ function resetDefault(option) {
     
         clickInput.value = defaultSettings[option]
         inputRange.value = defaultSettings[option]
-    }
-
-    if (clickInput.type == 'radio') {
+    } else if (clickInput.type == 'radio') {
         const inputRadio = document.querySelectorAll(`input[name="${option}"]`)
         for (let i = 0; i < inputRadio.length; i++) {
             if (inputRadio[i].value === defaultSettings[option]) {
@@ -16,5 +14,14 @@ function resetDefault(option) {
                 break
             }
         }
+    } else {
+        clickInput.value = defaultSettings[option]
+    }
+}
+
+function resetAllDefault() {
+    for (const option in defaultSettings) {
+        console.log(defaultSettings)
+        resetDefault(option)
     }
 }

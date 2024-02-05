@@ -13,7 +13,7 @@
         <p>Server Version 0.1.4.0</p>
         <p>마지막 업데이트 : -</p>
 
-        <button>전체 초기화</button>
+        <button onclick="resetAllDefault()">전체 초기화</button>
 
         <table>
             <thead>
@@ -506,9 +506,9 @@
                 <td>CoopPlayerMaxNum</td>
                 <td>최대 협동 던전 플레이어 수</td>
                 <td>
-                    <input type="text" name="ServerPassword" value="4">
+                    <input type="text" name="CoopPlayerMaxNum" value="4">
                 </td>
-                <td>기본값: 4 <button onclick="resetDefault('ServerPassword')">초기화</button></td>
+                <td>기본값: 4 <button onclick="resetDefault('CoopPlayerMaxNum')">초기화</button></td>
             </tr>
             <tr>
                 <td>ServerPlayerMaxNum</td>
