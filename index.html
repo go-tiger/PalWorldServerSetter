@@ -43,7 +43,7 @@
                     <input type="range" name="DayTimeSpeedRateRange" value="1" min="0.1" max="5" step="0.1">
                     ( 0.1 ~ 5 )
                 </td>
-                <td>기본값: 1 <button>초기화</button></td>
+                <td>기본값: 1 <button onclick="resetDefault('DayTimeSpeedRate')">초기화</button></td>
             </tr>
             <tr>
                 <td>NightTimeSpeedRate</td>
@@ -53,7 +53,7 @@
                     <input type="range" name="NightTimeSpeedRateRange" value="1" min="0.1" max="5" step="0.1">
                     ( 0.1 ~ 5 )
                 </td>
-                <td>기본값: 1 <button>초기화</button></td>
+                <td>기본값: 1 <button onclick="resetDefault('NightTimeSpeedRate')">초기화</button></td>
             </tr>
             <tr>
                 <td>ExpRate</td>
@@ -63,7 +63,7 @@
                     <input type="range" name="ExpRateRange" value="1" min="0.1" max="20" step="0.1">
                     ( 0.1 ~ 20 )
                 </td>
-                <td>기본값: 1 <button>초기화</button></td>
+                <td>기본값: 1 <button onclick="resetDefault('ExpRate')">초기화</button></td>
             </tr>
             <tr>
                 <td>PalCaptureRate</td>
@@ -73,7 +73,7 @@
                     <input type="range" name="PalCaptureRateRange" value="1" min="0.5" max="2" step="0.1">
                     ( 0.1 ~ 2 )
                 </td>
-                <td>기본값: 1 <button>초기화</button></td>
+                <td>기본값: 1 <button onclick="resetDefault('PalCaptureRate')">초기화</button></td>
             </tr>
             <tr>
                 <td>PalSpawnNumRate</td>
@@ -83,7 +83,7 @@
                     <input type="range" name="PalSpawnNumRateRange" value="1" min="0.5" max="3" step="0.1">
                     ( 0.5 ~ 3 )
                 </td>
-                <td>기본값: 1 <button>초기화</button></td>
+                <td>기본값: 1 <button onclick="resetDefault('PalSpawnNumRate')">초기화</button></td>
             </tr>
             <tr>
                 <td>PalDamageRateAttack</td>
@@ -93,7 +93,7 @@
                     <input type="range" name="PalDamageRateAttackRange" value="1" min="0.1" max="5" step="0.1">
                     ( 0.1 ~ 5 )
                 </td>
-                <td>기본값: 1 <button>초기화</button></td>
+                <td>기본값: 1 <button onclick="resetDefault('PalDamageRateAttack')">초기화</button></td>
             </tr>
             <tr>
                 <td>PalDamageRateDefense</td>
@@ -103,7 +103,7 @@
                     <input type="range" name="PalDamageRateDefenseRange" value="1" min="0.1" max="5" step="0.1">
                     ( 0.1 ~ 5 )
                 </td>
-                <td>기본값: 1 <button>초기화</button></td>
+                <td>기본값: 1 <button onclick="resetDefault('PalDamageRateDefense')">초기화</button></td>
             </tr>
             <tr>
                 <td>PlayerDamageRateAttack</td>
@@ -113,7 +113,7 @@
                     <input type="range" name="PlayerDamageRateAttackRange" value="1" min="0.1" max="5" step="0.1">
                     ( 0.1 ~ 5 )
                 </td>
-                <td>기본값: 1 <button>초기화</button></td>
+                <td>기본값: 1 <button onclick="resetDefault('PlayerDamageRateAttack')">초기화</button></td>
             </tr>
             <tr>
                 <td>PlayerDamageRateDefense</td>
@@ -123,7 +123,7 @@
                     <input type="range" name="PlayerDamageRateDefenseRange" value="1" min="0.1" max="5" step="0.1">
                     ( 0.1 ~ 5 )
                 </td>
-                <td>기본값: 1 <button>초기화</button></td>
+                <td>기본값: 1 <button onclick="resetDefault('PlayerDamageRateDefense')">초기화</button></td>
             </tr>
             <tr>
                 <td>PlayerStomachDecreaseRate</td>
@@ -133,7 +133,7 @@
                     <input type="range" name="PlayerStomachDecreaseRateRange" value="1" min="0.1" max="5" step="0.1">
                     ( 0.1 ~ 5 )
                 </td>
-                <td>기본값: 1 <button>초기화</button></td>
+                <td>기본값: 1 <button onclick="resetDefault('PlayerStomachDecreaseRate')">초기화</button></td>
             </tr>
             <tr>
                 <td>PlayerStaminaDecreaseRate</td>
@@ -143,7 +143,7 @@
                     <input type="range" name="PlayerStaminaDecreaseRateRange" value="1" min="0.1" max="5" step="0.1">
                     ( 0.1 ~ 5 )
                 </td>
-                <td>기본값: 1 <button>초기화</button></td>
+                <td>기본값: 1 <button onclick="resetDefault('PlayerStaminaDecreaseRate')">초기화</button></td>
             </tr>
             <tr>
                 <td>PlayerAutoHPRegeneRate</td>
@@ -153,7 +153,7 @@
                     <input type="range" name="PlayerAutoHPRegeneRateRange" value="1" min="0.1" max="5" step="0.1">
                     ( 0.1 ~ 5 )
                 </td>
-                <td>기본값: 1 <button>초기화</button></td>
+                <td>기본값: 1 <button onclick="resetDefault('PlayerAutoHPRegeneRate')">초기화</button></td>
             </tr>
             <tr>
                 <td>PlayerAutoHpRegeneRateInSleep</td>
@@ -163,7 +163,7 @@
                     <input type="range" name="PlayerAutoHpRegeneRateInSleepRange" value="1" min="0.1" max="5" step="0.1">
                     ( 0.1 ~ 5 )
                 </td>
-                <td>기본값: 1 <button>초기화</button></td>
+                <td>기본값: 1 <button onclick="resetDefault('PlayerAutoHpRegeneRateInSleep')">초기화</button></td>
             </tr>
             <tr>
                 <td>PalStomachDecreaseRate</td>
@@ -173,7 +173,7 @@
                     <input type="range" name="PalStomachDecreaseRateRange" value="1" min="0.1" max="5" step="0.1">
                     ( 0.1 ~ 5 )
                 </td>
-                <td>기본값: 1 <button>초기화</button></td>
+                <td>기본값: 1 <button onclick="resetDefault('PalStomachDecreaseRate')">초기화</button></td>
             </tr>
             <tr>
                 <td>PalStaminaDecreaseRate</td>
@@ -183,7 +183,7 @@
                     <input type="range" name="PalStaminaDecreaseRateRange" value="1" min="0.1" max="5" step="0.1">
                     ( 0.1 ~ 5 )
                 </td>
-                <td>기본값: 1 <button>초기화</button></td>
+                <td>기본값: 1 <button onclick="resetDefault('PalStaminaDecreaseRate')">초기화</button></td>
             </tr>
             <tr>
                 <td>PalAutoHPRegeneRate</td>
@@ -193,7 +193,7 @@
                     <input type="range" name="PalAutoHPRegeneRateRange" value="1" min="0.1" max="5" step="0.1">
                     ( 0.1 ~ 5 )
                 </td>
-                <td>기본값: 1 <button>초기화</button></td>
+                <td>기본값: 1 <button onclick="resetDefault('PalAutoHPRegeneRate')">초기화</button></td>
             </tr>
             <tr>
                 <td>PalAutoHpRegeneRateInSleep</td>
@@ -203,7 +203,7 @@
                     <input type="range" name="PalAutoHpRegeneRateInSleepRange" value="1" min="0.1" max="5" step="0.1">
                     ( 0.1 ~ 5 )
                 </td>
-                <td>기본값: 1 <button>초기화</button></td>
+                <td>기본값: 1 <button onclick="resetDefault('PalAutoHpRegeneRateInSleep')">초기화</button></td>
             </tr>
             <tr>
                 <td>BuildObjectDamageRate</td>
@@ -213,7 +213,7 @@
                     <input type="range" name="BuildObjectDamageRateRange" value="1" min="0.1" max="3" step="0.1">
                     ( 0.1 ~ 3 )
                 </td>
-                <td>기본값: 1 <button>초기화</button></td>
+                <td>기본값: 1 <button onclick="resetDefault('BuildObjectDamageRate')">초기화</button></td>
             </tr>
             <tr>
                 <td>BuildObjectDeteriorationDamageRate</td>
@@ -223,7 +223,7 @@
                     <input type="range" name="BuildObjectDeteriorationDamageRateRange" value="1" min="0" max="10" step="0.1">
                     ( 0 ~ 10 )
                 </td>
-                <td>기본값: 1 <button>초기화</button></td>
+                <td>기본값: 1 <button onclick="resetDefault('BuildObjectDeteriorationDamageRate')">초기화</button></td>
             </tr>
             <tr>
                 <td>CollectionDropRate</td>
@@ -233,7 +233,7 @@
                     <input type="range" name="CollectionDropRateRange" value="1" min="0.5" max="3" step="0.1">
                     ( 0.5 ~ 3 )
                 </td>
-                <td>기본값: 1 <button>초기화</button></td>
+                <td>기본값: 1 <button onclick="resetDefault('CollectionDropRate')">초기화</button></td>
             </tr>
             <tr>
                 <td>CollectionObjectHpRate</td>
@@ -243,7 +243,7 @@
                     <input type="range" name="CollectionObjectHpRateRange" value="1" min="0.5" max="3" step="0.1">
                     ( 0.5 ~ 3 )
                 </td>
-                <td>기본값: 1 <button>초기화</button></td>
+                <td>기본값: 1 <button onclick="resetDefault('CollectionObjectHpRate')">초기화</button></td>
             </tr>
             <tr>
                 <td>CollectionObjectRespawnSpeedRate</td>
@@ -253,7 +253,7 @@
                     <input type="range" name="CollectionObjectRespawnSpeedRateRange" value="1" min="0.5" max="3" step="0.1">
                     ( 0.5 ~ 3 )
                 </td>
-                <td>기본값: 1 <button>초기화</button></td>
+                <td>기본값: 1 <button onclick="resetDefault('CollectionObjectRespawnSpeedRate')">초기화</button></td>
             </tr>
             <tr>
                 <td>EnemyDropItemRate</td>
@@ -263,7 +263,7 @@
                     <input type="range" name="EnemyDropItemRateRange" value="1" min="0.5" max="3" step="0.1">
                     ( 0.5 ~ 3 )
                 </td>
-                <td>기본값: 1 <button>초기화</button></td>
+                <td>기본값: 1 <button onclick="resetDefault('EnemyDropItemRate')">초기화</button></td>
             </tr>
             <tr>
                 <td>DeathPenalty</td>
@@ -274,7 +274,7 @@
                     <input type="radio" name="DeathPenalty" value="ItemAndEquipment">ItemAndEquipment-모든 아이템 드랍<br>
                     <input type="radio" name="DeathPenalty" value="All" checked>All-모든 팰, 아이템 드랍
                 </td>
-                <td>기본값: All <button>초기화</button></td>
+                <td>기본값: All <button onclick="resetDefault('DeathPenalty')">초기화</button></td>
             </tr>
             <tr>
                 <td>bEnablePlayerToPlayerDamage</td>
@@ -283,7 +283,7 @@
                     <input type="radio" name="bEnablePlayerToPlayerDamage" value="True">활성화
                     <input type="radio" name="bEnablePlayerToPlayerDamage" value="False" checked>비활성화
                 </td>
-                <td>기본값: False <button>초기화</button></td>
+                <td>기본값: False <button onclick="resetDefault('bEnablePlayerToPlayerDamage')">초기화</button></td>
             </tr>
             <tr>
                 <td>bEnableFriendlyFire</td>
@@ -292,7 +292,7 @@
                     <input type="radio" name="bEnableFriendlyFire" value="True">활성화
                     <input type="radio" name="bEnableFriendlyFire" value="False" checked>비활성화
                 </td>
-                <td>기본값: False <button>초기화</button></td>
+                <td>기본값: False <button onclick="resetDefault('bEnableFriendlyFire')">초기화</button></td>
             </tr>
             <tr>
                 <td>bEnableInvaderEnemy</td>
@@ -301,7 +301,7 @@
                     <input type="radio" name="bEnableInvaderEnemy" value="True" checked>활성화
                     <input type="radio" name="bEnableInvaderEnemy" value="False">비활성화
                 </td>
-                <td>기본값: True <button>초기화</button></td>
+                <td>기본값: True <button onclick="resetDefault('bEnableInvaderEnemy')">초기화</button></td>
             </tr>
             <tr>
                 <td>bActiveUNKO</td>
@@ -310,7 +310,7 @@
                     <input type="radio" name="bActiveUNKO" value="True">활성화
                     <input type="radio" name="bActiveUNKO" value="False" checked>비활성화
                 </td>
-                <td>기본값: False <button>초기화</button></td>
+                <td>기본값: False <button onclick="resetDefault('bActiveUNKO')">초기화</button></td>
             </tr>
             <tr>
                 <td>bEnableAimAssistPad</td>
@@ -319,7 +319,7 @@
                     <input type="radio" name="bEnableAimAssistPad" value="True" checked>활성화
                     <input type="radio" name="bEnableAimAssistPad" value="False">비활성화
                 </td>
-                <td>기본값: True <button>초기화</button></td>
+                <td>기본값: True <button onclick="resetDefault('bEnableAimAssistPad')">초기화</button></td>
             </tr>
             <tr>
                 <td>bEnableAimAssistKeyboard</td>
@@ -328,7 +328,7 @@
                     <input type="radio" name="bEnableAimAssistKeyboard" value="True">활성화
                     <input type="radio" name="bEnableAimAssistKeyboard" value="False" checked>비활성화
                 </td>
-                <td>기본값: False <button>초기화</button></td>
+                <td>기본값: False <button onclick="resetDefault('bEnableAimAssistKeyboard')">초기화</button></td>
             </tr>
             <tr>
                 <td>DropItemMaxNum</td>
@@ -338,7 +338,7 @@
                     <input type="range" name="DropItemMaxNumRange" value="3000" min="0" max="5000" step="1">
                     ( 0 ~ 5000 )
                 </td>
-                <td>기본값: 3000 <button>초기화</button></td>
+                <td>기본값: 3000 <button onclick="resetDefault('DropItemMaxNum')">초기화</button></td>
             </tr>
             <tr>
                 <td>DropItemMaxNum_UNKO</td>
@@ -348,7 +348,7 @@
                     <input type="range" name="DropItemMaxNum_UNKORange" value="100" min="0" max="5000" step="1">
                     ( 0 ~ 5000 )
                 </td>
-                <td>기본값: 100 <button>초기화</button></td>
+                <td>기본값: 100 <button onclick="resetDefault('DropItemMaxNum_UNKO')">초기화</button></td>
             </tr>
             <tr>
                 <td>BaseCampMaxNum</td>
@@ -358,7 +358,7 @@
                     <input type="range" name="BaseCampMaxNumRange" value="128" min="0" max="10240" step="1">
                     ( 0 ~ 10240 )
                 </td>
-                <td>기본값: 128 <button>초기화</button></td>
+                <td>기본값: 128 <button onclick="resetDefault('BaseCampMaxNum')">초기화</button></td>
             </tr>
             <tr>
                 <td>BaseCampWorkerMaxNum</td>
@@ -368,7 +368,7 @@
                     <input type="range" name="BaseCampWorkerMaxNumRange" value="15" min="0" max="20" step="1">
                     ( 1 ~ 20 )
                 </td>
-                <td>기본값: 15 <button>초기화</button></td>
+                <td>기본값: 15 <button onclick="resetDefault('BaseCampWorkerMaxNum')">초기화</button></td>
             </tr>
             <tr>
                 <td>DropItemAliveMaxHours</td>
@@ -378,7 +378,7 @@
                     <input type="range" name="DropItemAliveMaxHoursRange" value="1" min="0" max="240" step="1">
                     ( 0 ~ 240 )
                 </td>
-                <td>기본값: 1 <button>초기화</button></td>
+                <td>기본값: 1 <button onclick="resetDefault('DropItemAliveMaxHours')">초기화</button></td>
             </tr>
             <tr>
                 <td>bAutoResetGuildNoOnlinePlayers</td>
@@ -387,7 +387,7 @@
                     <input type="radio" name="bAutoResetGuildNoOnlinePlayers" value="True">활성화
                     <input type="radio" name="bAutoResetGuildNoOnlinePlayers" value="False" checked>비활성화
                 </td>
-                <td>기본값: False <button>초기화</button></td>
+                <td>기본값: False <button onclick="resetDefault('bAutoResetGuildNoOnlinePlayers')">초기화</button></td>
             </tr>
             <tr>
                 <td>AutoResetGuildTimeNoOnlinePlayers</td>
@@ -397,7 +397,7 @@
                     <input type="range" name="AutoResetGuildTimeNoOnlinePlayersRange" value="72" min="0" max="240" step="1">
                     ( 0 ~ 240 )
                 </td>
-                <td>기본값: 72 <button>초기화</button></td>
+                <td>기본값: 72 <button onclick="resetDefault('AutoResetGuildTimeNoOnlinePlayers')">초기화</button></td>
             </tr>
             <tr>
                 <td>GuildPlayerMaxNum</td>
@@ -407,7 +407,7 @@
                     <input type="range" name="AutoResetGuildTimeNoOnlinePlayersRange" value="20" min="0" max="100" step="1">
                     ( 0 ~ 100 )
                 </td>
-                <td>기본값: 20 <button>초기화</button></td>
+                <td>기본값: 20 <button onclick="resetDefault('AutoResetGuildTimeNoOnlinePlayers')">초기화</button></td>
             </tr>
             <tr>
                 <td>PalEggDefaultHatchingTime</td>
@@ -417,7 +417,7 @@
                     <input type="range" name="PalEggDefaultHatchingTimeRange" value="72" min="0" max="240" step="1">
                     ( 0 ~ 240 )
                 </td>
-                <td>기본값: 72 <button>초기화</button></td>
+                <td>기본값: 72 <button onclick="resetDefault('PalEggDefaultHatchingTime')">초기화</button></td>
             </tr>
             <tr>
                 <td>WorkSpeedRate</td>
@@ -427,7 +427,7 @@
                     <input type="range" name="WorkSpeedRateRange" value="1" min="0.1" max="5" step="0.1">
                     ( 0.1 ~ 5 )
                 </td>
-                <td>기본값: 1 <button>초기화</button></td>
+                <td>기본값: 1 <button onclick="resetDefault('WorkSpeedRate')">초기화</button></td>
             </tr>
             <tr>
                 <td>bIsMultiplay</td>
@@ -436,7 +436,7 @@
                     <input type="radio" name="bIsMultiplay" value="True">활성화
                     <input type="radio" name="bIsMultiplay" value="False" checked>비활성화
                 </td>
-                <td>기본값: False <button>초기화</button></td>
+                <td>기본값: False <button onclick="resetDefault('bIsMultiplay')">초기화</button></td>
             </tr>
             <tr>
                 <td>bIsPvP</td>
@@ -445,7 +445,7 @@
                     <input type="radio" name="bIsPvP" value="True">활성화
                     <input type="radio" name="bIsPvP" value="False" checked>비활성화
                 </td>
-                <td>기본값: False <button>초기화</button></td>
+                <td>기본값: False <button onclick="resetDefault('bIsPvP')">초기화</button></td>
             </tr>
             <tr>
                 <td>bCanPickupOtherGuildDeathPenaltyDrop</td>
@@ -454,7 +454,7 @@
                     <input type="radio" name="bCanPickupOtherGuildDeathPenaltyDrop" value="True">활성화
                     <input type="radio" name="bCanPickupOtherGuildDeathPenaltyDrop" value="False" checked>비활성화
                 </td>
-                <td>기본값: False <button>초기화</button></td>
+                <td>기본값: False <button onclick="resetDefault('bCanPickupOtherGuildDeathPenaltyDrop')">초기화</button></td>
             </tr>
             <tr>
                 <td>bEnableNonLoginPenalty</td>
@@ -463,7 +463,7 @@
                     <input type="radio" name="bEnableNonLoginPenalty" value="True" checked>활성화
                     <input type="radio" name="bEnableNonLoginPenalty" value="False">비활성화
                 </td>
-                <td>기본값: True <button>초기화</button></td>
+                <td>기본값: True <button onclick="resetDefault('bEnableNonLoginPenalty')">초기화</button></td>
             </tr>
             <tr>
                 <td>bEnableFastTravel</td>
@@ -472,7 +472,7 @@
                     <input type="radio" name="bEnableFastTravel" value="True" checked>활성화
                     <input type="radio" name="bEnableFastTravel" value="False">비활성화
                 </td>
-                <td>기본값: True <button>초기화</button></td>
+                <td>기본값: True <button onclick="resetDefault('bEnableFastTravel')">초기화</button></td>
             </tr>
             <tr>
                 <td>bIsStartLocationSelectByMap</td>
@@ -481,7 +481,7 @@
                     <input type="radio" name="bIsStartLocationSelectByMap" value="True" checked>활성화
                     <input type="radio" name="bIsStartLocationSelectByMap" value="False">비활성화
                 </td>
-                <td>기본값: True <button>초기화</button></td>
+                <td>기본값: True <button onclick="resetDefault('bIsStartLocationSelectByMap')">초기화</button></td>
             </tr>
             <tr>
                 <td>bExistPlayerAfterLogout</td>
@@ -490,7 +490,7 @@
                     <input type="radio" name="bExistPlayerAfterLogout" value="True">활성화
                     <input type="radio" name="bExistPlayerAfterLogout" value="False" checked>비활성화
                 </td>
-                <td>기본값: False <button>초기화</button></td>
+                <td>기본값: False <button onclick="resetDefault('bExistPlayerAfterLogout')">초기화</button></td>
             </tr>
             <tr>
                 <td>bEnableDefenseOtherGuildPlayer</td>
@@ -499,7 +499,7 @@
                     <input type="radio" name="bEnableDefenseOtherGuildPlayer" value="True">활성화
                     <input type="radio" name="bEnableDefenseOtherGuildPlayer" value="False" checked>비활성화
                 </td>
-                <td>기본값: False <button>초기화</button></td>
+                <td>기본값: False <button onclick="resetDefault('bEnableDefenseOtherGuildPlayer')">초기화</button></td>
             </tr>
             <tr>
                 <td>CoopPlayerMaxNum</td>
@@ -507,7 +507,7 @@
                 <td>
                     <input type="text" name="ServerPassword" value="4">
                 </td>
-                <td>기본값: 4 <button>초기화</button></td>
+                <td>기본값: 4 <button onclick="resetDefault('ServerPassword')">초기화</button></td>
             </tr>
             <tr>
                 <td>ServerPlayerMaxNum</td>
@@ -517,31 +517,31 @@
                     <input type="range" name="ServerPlayerMaxNumRange" value="32" min="0" max="512" step="1">
                     ( 1 ~ 512 )
                 </td>
-                <td>기본값: 32 <button>초기화</button></td>
+                <td>기본값: 32 <button onclick="resetDefault('ServerPlayerMaxNum')">초기화</button></td>
             </tr>
             <tr>
                 <td>ServerName</td>
                 <td>서버 이름</td>
                 <td>
-                    <input type="text" name="ServerPassword" value="Default Palworld Server">
+                    <input type="text" name="ServerName" value="Default Palworld Server">
                 </td>
-                <td><button>초기화</button></td>
+                <td><button onclick="resetDefault('ServerName')">초기화</button></td>
             </tr>
             <tr>
                 <td>ServerDescription</td>
                 <td>서버 설명</td>
                 <td>
-                    <input type="text" name="ServerPassword" value="">
+                    <input type="text" name="ServerDescription" value="">
                 </td>
-                <td><button>초기화</button></td>
+                <td><button onclick="resetDefault('ServerDescription')">초기화</button></td>
             </tr>
             <tr>
                 <td>AdminPassword</td>
                 <td>어드민 비밀번호</td>
                 <td>
-                    <input type="text" name="ServerPassword" value="">
+                    <input type="text" name="AdminPassword" value="">
                 </td>
-                <td><button>초기화</button></td>
+                <td><button onclick="resetDefault('AdminPassword')">초기화</button></td>
             </tr>
             <tr>
                 <td>ServerPassword</td>
@@ -549,7 +549,7 @@
                 <td>
                     <input type="text" name="ServerPassword" value="">
                 </td>
-                <td><button>초기화</button></td>
+                <td><button onclick="resetDefault('ServerPassword')">초기화</button></td>
             </tr>
             <tr>
                 <td>PublicPort</td>
@@ -557,7 +557,7 @@
                 <td>
                     <input type="text" name="PublicPort" value="8211">
                 </td>
-                <td>기본값: 8211 <button>초기화</button></td>
+                <td>기본값: 8211 <button onclick="resetDefault('PublicPort')">초기화</button></td>
             </tr>
             <tr>
                 <td>PublicIP</td>
@@ -565,7 +565,7 @@
                 <td>
                     <input type="text" name="PublicIP" value="">
                 </td>
-                <td><button>초기화</button></td>
+                <td><button onclick="resetDefault('PublicIP')">초기화</button></td>
             </tr>
             <tr>
                 <td>RCONEnabled</td>
@@ -574,7 +574,7 @@
                     <input type="radio" name="RCONEnabled" value="True">활성화
                     <input type="radio" name="RCONEnabled" value="False" checked>비활성화
                 </td>
-                <td>기본값: False <button>초기화</button></td>
+                <td>기본값: False <button onclick="resetDefault('RCONEnabled')">초기화</button></td>
             </tr>
             <tr>
                 <td>RCONPort</td>
@@ -582,7 +582,7 @@
                 <td>
                     <input type="text" name="RCONPort" value="25575">
                 </td>
-                <td>기본값: 25575 <button>초기화</button></td>
+                <td>기본값: 25575 <button onclick="resetDefault('RCONPort')">초기화</button></td>
             </tr>
             <tr>
                 <td>Region</td>
@@ -590,7 +590,7 @@
                 <td>
                     <input type="text" name="Region" value="">
                 </td>
-                <td><button>초기화</button></td>
+                <td><button onclick="resetDefault('Region')">초기화</button></td>
             </tr>
             <tr>
                 <td>bUseAuth</td>
@@ -599,7 +599,7 @@
                     <input type="radio" name="bUseAuth" value="True" checked>활성화
                     <input type="radio" name="bUseAuth" value="False">비활성화
                 </td>
-                <td>기본값: True <button>초기화</button></td>
+                <td>기본값: True <button onclick="resetDefault('bUseAuth')">초기화</button></td>
             </tr>
             <tr>
                 <td>BanListURL</td>
@@ -607,7 +607,7 @@
                 <td>
                     <input type="text" name="BanListURL" value="https://api.palworldgame.com/api/banlist.txt">
                 </td>
-                <td><button>초기화</button></td>
+                <td><button onclick="resetDefault('BanListURL')">초기화</button></td>
             </tr>
             </tbody>
         </table>
