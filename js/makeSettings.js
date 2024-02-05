@@ -61,3 +61,16 @@ function CopySettings() {
     let PalWorldSettings = SaveSettings()
     copyClipboard(PalWorldSettings)
 }
+
+function MakeSettings() {
+    let PalWorldSettings = SaveSettings();
+
+    const blob = new Blob([PalWorldSettings], { type: 'text/plain' });
+    const link = document.createElement('a');
+    link.href = window.URL.createObjectURL(blob);
+    link.download = 'PalWorldSettings.ini';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    alert('다운로드 되었습니다. 다운로드 페이지를 확인해주세요')
+}
