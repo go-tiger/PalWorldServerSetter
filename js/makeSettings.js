@@ -33,11 +33,17 @@ function settingsContent(AllSettingValue) {
 [/Script/Pal.PalGameWorldSettings]
 OptionSettings=(`
 
+    const quoteskeys = ['ServerName', 'ServerDescription', 'AdminPassword', 'ServerPassword', 'PublicIP', 'Region', 'BanListURL']
+
     for (const option in AllSettingValue) {
         if (AllSettingValue[option] === "") {
             PalWorldSettings += `${option}="",`;
         } else {
-            PalWorldSettings += `${option}=${AllSettingValue[option]},`;
+            if (quoteskeys.includes(option)) {
+                PalWorldSettings += `${option}="${AllSettingValue[option]}",`;
+            } else {
+                PalWorldSettings += `${option}=${AllSettingValue[option]},`;
+            }
         }
     }
 
